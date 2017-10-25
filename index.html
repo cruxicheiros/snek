@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snek Home</title>
+    <link type = 'text/css' rel = 'stylesheet' href = 'css/style.css'>
+    <script src="js/CanvasController.js"></script>
+    <script src="js/ColorShifter.js"></script>
+
+    <script>
+        window.onload = function() {
+            const canvas = document.getElementById("canvas");
+            const ctx = canvas.getContext("2d");
+
+            initCanvas(canvas, ctx);
+            cycleHues();
+
+            var snake = document.getElementById('topsnek');
+            var messagebox = document.getElementById('message-box');
+            snake.addEventListener('mousemove', function() {messagebox.innerText = 'no boop the snoot >:(';
+                                                            snake.src = 'img/angersnek.png'}, false);
+            snake.addEventListener('mouseout', function() {document.getElementById('message-box').innerText = 'happy snek';
+                                                            snake.src = 'img/happysnek.png'}, false);
+        }
+    </script>
+</head>
+<body>
+    <canvas id = 'canvas'></canvas>
+
+    <div id = "content">
+        <header>
+            <h1 id = 'heading' class = 'rainbow'>Snek.</h1>
+        </header>
+        <img id = 'topsnek' src="img/happysnek.png"/>
+        <p id = 'credit'>This snek is from <a class = 'rainbow' href="https://imgur.com/oqiKmgk">tuck_shop</a>. Snek for educational purposes only.</p>
+        <p class = 'rainbow' id = 'message-box'>happy snek</p>
+
+    </div>
+</body>
+</html>
