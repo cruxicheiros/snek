@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Snek Home</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
     <link type = 'text/css' rel = 'stylesheet' href = 'css/style.css'>
+
     <script src="js/CanvasController.js"></script>
     <script src="js/ColorShifter.js"></script>
 
@@ -15,7 +18,7 @@
             initCanvas(canvas, ctx);
             cycleHues();
 
-            var snake = document.getElementById('topsnek');
+            var snake = document.getElementById('snek-image');
             var messagebox = document.getElementById('message-box');
             snake.addEventListener('mousemove', function() {messagebox.innerText = 'no boop the snoot >:(';
                                                             snake.src = 'img/angersnek.png'}, false);
@@ -31,7 +34,7 @@
         <header>
             <h1 id = 'heading' class = 'rainbow'>Snek.</h1>
         </header>
-        <img id = 'topsnek' src="img/happysnek.png"/>
+        <img id = 'snek-image' src="img/happysnek.png"/>
         <p id = 'credit'>This snek is from <a class = 'rainbow' href="https://imgur.com/oqiKmgk">tuck_shop</a>. Snek for educational purposes only.</p>
         <p class = 'rainbow' id = 'message-box'>happy snek</p>
 
