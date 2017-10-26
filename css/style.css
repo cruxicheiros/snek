@@ -1,49 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
 
-#content {
-    font-family: 'Patua One', cursive;
-    pointer-events:none;
-    z-index: 2;
-    position: relative;
-    margin:40px auto;
-    text-align: center;
-}
-
-#message-box {
-    font-size: 30px;
-}
-
-a {
-    pointer-events: all;
-}
-
-#credit {
-    font-size: 10px;
-}
-
+a {pointer-events: all;}
 
 canvas {
+    height: 100%;
+    left: 0;
     overflow: visible;
     position: absolute;
-    left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
     z-index: 1;
 }
+
+#content {
+    font-family: 'Patua One', cursive;
+    margin: 40px auto;
+    pointer-events: none;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+#credit {font-size: 10px;}
 
 #heading {
     color: hsl(313, 100%, 54%);
     font-size: 70px;
 }
 
-#topsnek {
-    pointer-events: all;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60%;
-    height: auto;
-    border-radius: 30px;
+#message-box {font-size: 30px;}
 
+#snek-image {
+    border-radius: 30px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 60%;
+    pointer-events: all;
 }
