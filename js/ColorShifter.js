@@ -5,8 +5,8 @@ function shiftHue(hue) {
     return 0;
 }
 
-function cycleHues() {
-    const elems = document.getElementsByClassName('rainbow');
+function cycleHuesByClassName(className) {
+    const elems = document.getElementsByClassName(className);
     var hueState = 0;
 
 
