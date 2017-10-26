@@ -10,6 +10,7 @@
     <script src="js/CanvasController.js"></script>
     <script src="js/ColorShifter.js"></script>
 
+
     <script>
         window.onload = function() {
             const canvas = document.getElementById("canvas");
@@ -26,6 +27,17 @@
                                                             snake.src = 'img/happysnek.png'}, false);
         }
     </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108722510-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108722510-1');
+    </script>
+
 </head>
 <body>
     <canvas id = 'canvas'></canvas>
