@@ -21,10 +21,13 @@
 
             var snake = document.getElementById('snek-image');
             var messagebox = document.getElementById('message-box');
-            snake.addEventListener('mousemove', function() {messagebox.innerText = 'no boop the snoot >:(';
-                                                            snake.src = 'img/angersnek.png'}, false);
+
+            snake.addEventListener('mouseenter', function() {messagebox.innerText = 'no boop the snoot >:(';
+                                                            snake.src = 'img/angersnek.png';
+                                                            snake.alt = 'An angry snek'}, false);
             snake.addEventListener('mouseout', function() {document.getElementById('message-box').innerText = 'happy snek';
-                                                            snake.src = 'img/happysnek.png'}, false);
+                                                            snake.src = 'img/happysnek.png';
+                                                            snake.alt = 'A happy snek'}, false);
         }
     </script>
 
@@ -46,9 +49,9 @@
         <header>
             <h1 id = 'heading' class = 'rainbow'>Snek.</h1>
         </header>
-        <img id = 'snek-image' src="img/happysnek.png"/>
+        <img id = 'snek-image' src="img/happysnek.png" alt = "A happy snek"/>
         <p id = 'credit'>This snek is from <a class = 'rainbow' href="https://imgur.com/oqiKmgk">tuck_shop</a>. Snek for educational purposes only.</p>
-        <p class = 'rainbow' id = 'message-box'>happy snek</p>
+        <p class = 'rainbow' id = 'message-box' aria-live="polite">happy snek</p>
 
     </div>
 </body>
