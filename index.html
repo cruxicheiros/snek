@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Snek Home</title>
+    <title>Snek.</title>
 
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
     <link type = 'text/css' rel = 'stylesheet' href = 'css/style.css'>
@@ -21,7 +21,7 @@
 
             var snake = document.getElementById('snek-image');
             var messagebox = document.getElementById('message-box');
-            snake.addEventListener('mousemove', function() {messagebox.innerText = 'no boop the snoot >:(';
+            snake.addEventListener('mouseenter', function() {messagebox.innerText = 'no boop the snoot >:(';
                                                             snake.src = 'img/angersnek.png'}, false);
             snake.addEventListener('mouseout', function() {document.getElementById('message-box').innerText = 'happy snek';
                                                             snake.src = 'img/happysnek.png'}, false);
